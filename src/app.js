@@ -15,6 +15,8 @@ mongoose.connect("mongodb://127.0.0.1:27017");
 
 // carregar as Models
 const Product = require("./models/product");
+const Customer = require("./models/customer");
+const Order = require("./models/order");
 
 // carregar rotas
 const indexRoute = require("./routes/index-router");
