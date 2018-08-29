@@ -11,11 +11,9 @@ app.use(
 );
 
 // conectar com o mongoDB
-
 mongoose.connect("mongodb://127.0.0.1:27017");
 
 // carregar as Models
-
 const Product = require("./models/product");
 
 // carregar rotas
