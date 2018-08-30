@@ -22,9 +22,11 @@ const Order = require("./models/order");
 const indexRoute = require("./routes/index-router");
 const productRoute = require("./routes/product-router");
 const customerRoute = require("./routes/customer-router");
+const orderRoute = require("./routes/order-router");
 
 app.use("/", indexRoute);
 app.use("/products", productRoute);
-app.use("/customer", customerRoute);
+app.use("/customers", customerRoute);
+app.use("/orders", orderRoute);
 
 module.exports = app;
